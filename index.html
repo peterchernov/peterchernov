@@ -3,30 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter Chernov</title>
+    <title>canvas learning</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js"></script>
 </head>
-<body>
-    <div class="footer">
-        <div class="left">
-            <img src="logo.svg" alt="peter_chernov_mods_logo">
-        </div>
-        <div class="right">
-            <a href="" class="element">
-                Home
-            </a>
-            <a href="" class="element">
-                List of Mods
-            </a>
-            <a href="" class="element">
-                About
-            </a>
-            <a href="https://t.me/peter_chernov_mods" class="element border">
-                Telegram
-            </a>
-        </div>
-    </div>
+<body onload="draw();">
+    <canvas id="canvas" width="500" height="500">
+        
+    </canvas>
+    <br>
+    <label for="diameter">diameter: </label>
+    <input type="number" title="diameter" placeholder="25" id="diameter" width="50px" onchange="changeDiameter()">
+    <!-- <input type="range" title="diameter" id="diameter" onchange="changeDiameter()" min="0"> -->
 </body>
 </html>
