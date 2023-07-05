@@ -24,8 +24,8 @@ function onChange() {
     diameter = parseInt(document.getElementById('diameter').value);
     if (diameter > 50) {
         diameter = 50;
-    } else if (diameter < 0) {
-        diameter = 0;
+    } else if (diameter < 5) {
+        diameter = 5;
     }
     document.getElementById('diameter').value = diameter;
     layer = parseInt(document.getElementById('layer').value);
