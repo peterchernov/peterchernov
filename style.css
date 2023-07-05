@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    padding-top: 10px;
 }
 
 canvas {
@@ -10,4 +11,18 @@ canvas {
 input {
     border-radius: 5px;
     border-style: solid;
+}
+
+.input {
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 3px 6px 3px 6px;
+    border: 2px solid gray;
+    border-radius: 5px; 
+    background-color: rgb(234, 234, 234);
+    margin-left: 10px;
 }
