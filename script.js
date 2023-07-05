@@ -1,6 +1,5 @@
-function draw(diameter) {
-    if (!diameter) { diameter = 25 }
-
+let diameter = 25;
+function draw() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
@@ -18,7 +17,16 @@ function draw(diameter) {
 }
 
 function changeDiameter() {
-    const diameter = document.getElementById('diameter').value; 
-    draw(diameter);
+    diameter = document.getElementById('diameter').value; 
+    if (diameter > 50) {
+        diameter = 50;
+        document.getElementById('diameter').value = 50;
+        draw(diameter);
+    } else if (diameter < 0) {
+        diameter = 0;
+        document.getElementById('diameter').value = 0;
+        draw(diameter);
+    } else if (diameter) {
+        draw(diameter);
+    }
 }
-

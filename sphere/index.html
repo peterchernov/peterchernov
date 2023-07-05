@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Generation</title>
+    <title>Sphere Generation</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body onload="draw();">
-    <a href="./sphere">
-        sphere generation
+<body onload="draw(50);">
+    <a href="..">
+        circle generation
     </a>
     <br>
     <br>
@@ -18,7 +18,10 @@
     </canvas>
     <br>
     <label for="diameter">Diameter: </label>
-    <input type="number" value="25" id="diameter" width="50px" onchange="changeDiameter()">
+    <input type="number" id="diameter" width="50px" onchange="onChange()" value="25">
+    <br>
+    <label for="layer">Layer: </label>
+    <input type="number" id="layer" width="50px" onchange="onChange()" value="1">
     <!-- <input type="range" title="diameter" id="diameter" onchange="changeDiameter()" min="0"> -->
 </body>
 </html>
