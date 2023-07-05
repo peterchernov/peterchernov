@@ -4,7 +4,6 @@ let layer = 7;
 const squareScale = 10;
 
 function draw() {
-    if (!diameter) { diameter = 25 }
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
 
