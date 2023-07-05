@@ -23,13 +23,10 @@ function changeDiameter() {
     diameter = document.getElementById('diameter').value; 
     if (diameter > 50) {
         diameter = 50;
-        document.getElementById('diameter').value = 50;
-        draw(diameter);
+        document.getElementById('diameter').value = diameter;
     } else if (diameter < 5) {
         diameter = 5;
-        document.getElementById('diameter').value = 0;
-        draw(diameter);
-    } else if (diameter) {
-        draw(diameter);
+        document.getElementById('diameter').value = diameter;
     }
+    draw(diameter);
 }
