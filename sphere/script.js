@@ -1,5 +1,7 @@
 let diameter = 25;
-let layer = 1;
+let layer = 7;
+
+const squareScale = 10;
 
 function draw() {
     if (!diameter) { diameter = 25 }
@@ -13,7 +15,7 @@ function draw() {
     for (x = -radius; x < radius; x++) {
         for (y = -radius; y < radius; y++) {
             if ((x + 0.5) * (x + 0.5) + (y + 0.5) * (y + 0.5) + (layer - diameter / 2 - 0.5) * (layer - diameter / 2 - 0.5) <= radius * radius) {
-                ctx.fillRect((radius + x) * 10 + 0.25 + (500 - radius * 20) / 2, (radius + y) * 10 + 0.25 + (500 - radius * 20) / 2, 9.5, 9.5);
+                ctx.fillRect((radius + x) * squareScale + 0.25 + (500 - radius * 2 * squareScale) / 2, (radius + y) * squareScale + 0.25 + (500 - radius * 2 * squareScale) / 2, squareScale - 0.5, squareScale - 0.5);
             }
         }
     }
@@ -35,8 +37,4 @@ function onChange() {
     }
     document.getElementById('layer').value = layer;
     draw();
-}
-
-function changeLayer() {
-
 }
