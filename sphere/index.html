@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sphere Generation</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body onload="draw(50);">
-    <a href="../" class="link">back</a>
-    <br>
-    <br>
-    <canvas id="canvas" width="500" height="500">
-        
-    </canvas>
-    <br>
+    <div>
+        <a href="../" class="back">
+            Menu 
+        </a>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
     <div class="input">
         <label for="diameter">Diameter: </label>
         <input type="number" id="diameter" width="50px" onchange="onChange()" value="25">      
